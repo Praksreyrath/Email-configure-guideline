@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>សេចក្ដីណែនាំអំពីការប្រើប្រាស់អ៊ីមែល</title>
+  <style>
+    
+    body {
+      font-family: 'Khmer OS Battambang', 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 35px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h3 {
+      color: #0056b3;
+      margin-bottom: 15px;
+    }
+
+    ol, ul {
+      margin-left: 20px;
+      padding-left: 15px;
+    }
+
+    li {
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      list-style-type: disc;
+    }
+
+    .note {
+      background-color: #e8f4fc;
+      border-left: 5px solid #2196f3;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-size: 0.95em;
+    }
+
+    .email {
+      color: #1a73e8;
+      font-weight: bold;
+    }
+
+    img.step-img {
+      display: block;
+      margin: 10px auto;
+      max-width: 100%;
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      img.step-img {
+        width: 100%;
+      }
+    }
+
+  </style>
+ 
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="text-center">1.ការណែនាំអំពីការកំណត់អ៊ីមែលលើកម្មវិធីផ្សេងៗ</h2>
+
+    <!-- Gmail Send As -->
+    <div class="section">
+      <h3>A. Google Gmail “Send As”</h3>
+      <ol>
+        <li>ចូលទៅក្នុងគណនី Gmail។
+          <img class="step-img" src="images/login_email.jpg" alt="Login Gmail">
+        </li>
+        <li>ចុច "Settings" → “See all settings” → “Accounts and Import”។
+          <img class="step-img" src="images/acc_import.jpg" alt="Gmail Settings">
+        </li>
+        <li>ចុច “Add another email address”។
+          <img class="step-img" src="images/add_other.png" alt="Gmail Add Email Address">
+        </li>
+        <li>បញ្ចូលឈ្មោះអ្នក និងអាសយដ្ឋាន៖ <span class="email">demo@your-name.com</span>
+          <img class="step-img" src="images/gmail_set.png" alt="Gmail Enter Info">
+        </li>
+        <li>បញ្ចូល SMTP Server:
+          <ul>
+            <li>SMTP Server: smtp.yourdomain.com</li>
+            <li>Username: demo@your-name.com</li>
+            <li>Password: (ពាក្យសម្ងាត់អ៊ីមែល)</li>
+            <li>Port: 587 | Security: TLS</li>
+          </ul>
+          <img class="step-img" src="images/gmail_enter_info.jpg" alt="Gmail SMTP Setup">
+        </li>
+        <li>បញ្ចូលកូដ Verify →
+          <img class="step-img" src="images/verify.jpg" alt="Gmail Verify Code">
+        </li>
+      </ol>
+    
+    </div>
+    <!-- Outlook -->
+    <div class="section">
+      <h3>B. Microsoft Outlook</h3>
+      <ol>
+        <li>បើកកម្មវិធី <strong>Microsoft Outlook</strong>។
+          <img class="step-img" src="images/open_microsoft.png" alt="បើក Outlook">
+        </li>
+        <li>ចុច "File" → "Add Account"។
+          <img class="step-img" src="images/Add-Account.png" alt="Outlook Add Account">
+        </li>
+        <li>បញ្ចូលអាសយដ្ឋានអ៊ីមែល៖ <span class="email">demo@your-name.com</span>
+          <img class="step-img" src="images/Add-Email.png" alt="បញ្ចូលអាសយដ្ឋាន Outlook">
+        </li>
+        <li>បញ្ចូលពាក្យសម្ងាត់ →
+          <img class="step-img" src="images/Add_pass.png" alt="បញ្ចូលពាក្យសម្ងាត់ Outlook">
+        </li>
+        <li>Manual config:
+          <ul>
+            <li>Advanced options → “Let me set up my account manually”</li>
+            <li>ជ្រើស IMAP → បញ្ចូល server, port, និង authentication</li>
+          </ul>
+          <img class="step-img" src="images/Manual_Ouk.png" alt="Outlook Manual Config">
+        </li>
+      </ol>
+    
+    </div>
+
+   
+     <!-- Thunderbird -->
+    <div class="section">
+      <h3>C. Mozilla Thunderbird</h3>
+      <ol>
+        <li>ចូលទៅកាន់ <strong>Mozilla Thunderbird</strong> ដែលបានដំឡើងរួច។
+          <img class="step-img" src="/images/Thunderbird_logo.jpg" alt="បើក Thunderbird">
+        </li>
+        <li>បង្អួច "Set Up Your Existing Email Address" នឹងបង្ហាញឡើង...</li>
+        <li>បញ្ចូលព័ត៌មានខាងក្រោម៖
+          <ul>
+            <li>ឈ្មោះពេញ (Full Name): ឈ្មោះអ្នក</li>
+            <li>អាសយដ្ឋានអ៊ីមែល៖ <span class="email">demo@your-name.com</span></li>
+            <li>ពាក្យសម្ងាត់ (Password): ពាក្យសម្ងាត់របស់គណនី</li>
+          </ul>
+          <img class="step-img" src="images/thunderbird-enter-info.png" alt="បញ្ចូលព័ត៌មាន Thunderbird">
+        </li>
+        <li>ចុច “Continue” →</li>
+        <li>បើ Manual config:
+          <ul>
+            <li>Incoming: IMAP - imap.yourdomain.com - Port 993 - SSL/TLS</li>
+            <li>Outgoing: SMTP - smtp.yourdomain.com - Port 587 - STARTTLS</li>
+            <li>Authentication: Normal password</li>
+          </ul>
+          <img class="step-img" src="images/reset_done.jpg" alt="Thunderbird setup window">
+        </li>
+        <li>ចុច “Re-test” → បន្ទាប់មក “Done”។</li>
+      </ol>
+     
+    </div>
+
+  </div>
+
+</body>
+</html>
